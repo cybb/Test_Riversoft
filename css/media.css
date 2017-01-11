@@ -1,0 +1,12 @@
+@media screen and (max-width:745px){
+  
+  .contact-us{
+  position: absolute;  
+  right: 35%;
+  top:125px;
+  transform: rotate(0);
+  
+}
+  
+  
+}

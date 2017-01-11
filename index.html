@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Просмотр мест</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+
+    <div class="main-header--top">
+      <a class="main-header__logo" href="#"><img src="img/header-logo.png" alt="logo" title="логотип"></a>
+      <h2 class="main-header__desc">Просмотр мест</h2>
+      <div class="main-header__exit">выход</div>
+    </div>
+
+    <div class="main-header__bottom">
+
+      <ul class="main-header__list container">
+        <li class="main-header__list--activeitem"><a href="#">список мест</a></li>
+        <li><a href="#">избранные</a></li>
+        <li><a href="#">история</a></li>
+        <li><a href="#">карта</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <main class="content-wrap container">
+    <!--   список баз -->
+    <ul class="place-list">
+      <!-- шарада-->
+      <li class="place-list__item">
+        <div class="place-list__image">
+          <a href="#"><img src="img/warada.jpg" alt=""></a>
+        </div>
+
+        <div class="place-list__desc">
+          <h2 class="place-list__title">База отдыха "Шарада"</h2>
+          <p class="place-list__adress"><span>адрес: </span>г. Кременчуг ул. Лейтенанта Днепрова,111</p>
+          <p class="place-list__contact">контакты: +38(067)941-40-11, +38(067)186-87-37 | sharada@mail.ru , sharadabase@yandex.ua</p>
+          <p class="place-list__features">
+            Коттеджи, детская площадка, бассейн, мангал, турецкая баня, футбол(крытый зал), футбол (открытая площадь), теннис(крытый зал), теннис(открытый корт), фитнес, прогулки на катере, вейкборд, рыб ...
+          </p>
+
+          <div class="place-list__rate">
+            <div class="place-list__rate--star"></div>
+            <div class="place-list__rate--ratio">3.45 (оценок: 20)</div>
+            <div class="create-event">
+              создать событие
+            </div>
+          </div>
+
+        </div>
+        <div class="place-list__favorites star"> </div>
+      </li>
+
+      <!-- маяк -->
+      <li class="place-list__item">
+        <div class="place-list__image">
+          <a href="#"><img src="img/mayak.jpg" alt=""></a>
+        </div>
+
+        <div class="place-list__desc">
+          <h2 class="place-list__title">База отдыха "Маяк"</h2>
+          <p class="place-list__adress"><span>адрес: </span>с. Каменные Потоки, ул. Ленина, 149 (на р. Днепр)</p>
+          <p class="place-list__contact">контакты: +38(067)535-30-13, (0536)70-10-20</p>
+          <p class="place-list__features">
+            Домики и номера, детская площадка, прокат велосипедов, теннисный корт, настольный теннис, бильярд, прогулки налодках и катамаранах, беседки, проведение свадеб, банкеты и корпоративы, конференц-сервис.
+          </p>
+
+          <div class="place-list__rate">
+            <div class="place-list__rate--star"></div>
+            <div class="place-list__rate--ratio">4.8 (оценок: 41)</div>
+            <div class="create-event">
+              создать событие
+            </div>
+          </div>
+
+        </div>
+        <div class="place-list__favorites unstar"> </div>
+      </li>
+
+      <!--   липовый рай    -->
+
+      <li class="place-list__item">
+
+        <div class="place-list__image">
+          <a href="#"><img src="img/lipa.jpg" alt=""></a>
+        </div>
+
+        <div class="place-list__desc">
+          <h2 class="place-list__title">Гостиничный комплекс "Липовый рай"</h2>
+          <p class="place-list__adress"><span>адрес: </span>Полтавская область, с.Липовое, 79 км от Кременчуга на Киев</p>
+          <p class="place-list__contact">контакты: (067)992 00 00 </p>
+          <p class="place-list__features">
+            VIP домики, теннисный корт, конференц-сервис, детская площадка, прогулки на лодках и катамаранах, банный комплекс, рыбалка, охота, ресторан.
+          </p>
+
+          <div class="place-list__rate">
+            <div class="place-list__rate--star"></div>
+            <div class="place-list__rate--ratio">5.0 (оценок: 37)</div>
+            <div class="create-event">
+              создать событие
+            </div>
+          </div>
+        </div>
+
+        <div class="place-list__favorites star"></div>
+      </li>
+
+      <!-- укртатнафта -->
+
+      <li class="place-list__item">
+
+        <div class="place-list__image">
+          <a href="#"></a>
+        </div>
+
+        <div class="place-list__desc">
+          <h2 class="place-list__title">Комплекс спортивных сооружений "Укртатнафта"</h2>
+          <p class="place-list__adress"><span>адрес: </span>г. Кременчуг проспект 50 лет Октября, 33</p>
+          <p class="place-list__contact">контакты: -</p>
+          <p class="place-list__features">
+            Бассейн для взрослых, бассейн для детей. Тренажерный зал, спортивный зал для волейбола, футбольное поле, поле для мини-футбола, площадка для пляжного волейбола.
+          </p>
+
+          <div class="place-list__rate">
+            <div class="place-list__rate--star"></div>
+            <div class="place-list__rate--ratio">2.8 (оценок: 12)</div>
+            <div class="create-event">
+              создать событие
+            </div>
+          </div>
+
+        </div>
+        <div class="place-list__favorites star"></div>
+      </li>
+
+      <!--      city club  -->
+      <li class="place-list__item">
+        <div class="place-list__image">
+          <a href="#"><img src="img/city.jpg" alt=""></a>
+        </div>
+
+        <div class="place-list__desc">
+          <h2 class="place-list__title">Пляжный клуб "CityClub"</h2>
+          <p class="place-list__adress"><span>адрес: </span>г. Комсомольск ул. Мира 39</p>
+          <p class="place-list__contact">контакты: +38(093)522-77-44</p>
+          <p class="place-list__features">
+            Детская площадка, бассейн, ресторан, ночной клуб, кальян, караоке.
+          </p>
+
+          <div class="place-list__rate">
+            <div class="place-list__rate--star"></div>
+            <div class="place-list__rate--ratio">1.3 (оценок: 4)</div>
+            <div class="create-event">
+              создать событие
+            </div>
+          </div>
+
+        </div>
+
+        <div class="place-list__favorites"></div>
+
+      </li>
+
+      <!--  Балу -->
+      <li class="place-list__item">
+        <div class="place-list__image">
+          <a href="#"></a>
+        </div>
+
+        <div class="place-list__desc">
+          <h2 class="place-list__title">Спортивный комплекс "Балу"</h2>
+          <p class="place-list__adress"><span>адрес: </span>пгт. Власовка, станция "Днепр-2" улица Садовая,29, р.Днепр</p>
+          <p class="place-list__contact">контакты: +38(050)309-09-73 , (097)769-43-13</p>
+          <p class="place-list__features">
+            Отель, мини озеро, летняя площадка, рыбалка, сауна, бильярд, теннисный корт, площадка для волейбола, площадка для игры в мини-футбол.
+          </p>
+
+          <div class="place-list__rate">
+            <div class="place-list__rate--star"></div>
+            <div class="place-list__rate--ratio">2.5 (оценок: 8)</div>
+            <div class="create-event">
+              создать событие
+            </div>
+          </div>
+
+        </div>
+
+        <div class="place-list__favorites"></div>
+      </li>
+
+      <!--      Мисто -->
+       <li class="place-list__item">
+        <div class="place-list__image">
+          <a href="#"><img src="img/misto.jpg" alt=""></a>
+        </div>
+
+        <div class="place-list__desc">
+          <h2 class="place-list__title">Клуб "Мисто"</h2>
+          <p class="place-list__adress"><span>адрес: </span>г. Харьков ул. Клочковская 190-а</p>
+          <p class="place-list__contact">контакты: (057)758-17-02, (095)238-28-02</p>
+          <p class="place-list__features">
+            Диско-зона, Lounge Bar, караоке, сауна, spa-зона, фитнес, боулинг, ресторан, пивная.
+          </p>
+
+          <div class="place-list__rate">
+            <div class="place-list__rate--star"></div>
+            <div class="place-list__rate--ratio">5.0 (оценок: 82)</div>
+            <div class="create-event">
+              создать событие
+            </div>
+          </div> 
+        </div>
+        
+        <div class="place-list__favorites star"></div>
+        
+      </li>
+<!--      Чайка -->
+    <li class="place-list__item">
+        <div class="place-list__image">
+          <a href="#"><img src="img/chaika.jpg" alt=""></a>
+        </div>
+
+        <div class="place-list__desc">
+          <h2 class="place-list__title">База отдыха  "Чайка"</h2>
+          <p class="place-list__adress"><span>адрес: </span>с. Нагорное Светловодский р-н</p>
+          <p class="place-list__contact">контакты: +38(067)532-90-69</p>
+          <p class="place-list__features">
+            Домики, беседки, мангалы, баня.
+          </p>
+
+          <div class="place-list__rate">
+           
+            <div class="place-list__rate--star">
+              
+            
+              
+              
+              
+            </div>
+           
+            <div class="create-event">
+              создать событие
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="place-list__favorites"></div>
+        
+      </li>
+    </ul>
+<div class="rateit" id="rateit5" data-rateit-min="2">
+</div>
+<div>
+    <span id="value5"></span>
+    <span id="hover5"></span>
+</div>
+ 
+  
+ 
+  
+  </main>
+
+
+
+
+
+
+<div class="contact-us">связаться с нами</div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
