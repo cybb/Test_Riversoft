@@ -7,7 +7,7 @@
   <title>Просмотр мест</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
- 
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -34,15 +34,31 @@
 
   </header>
 
+  <section class="actions container">
+    <div class="add-new">добавить новое место</div>
+    <div class="remove-сhecked">удалить отмеченные</div>
+    <div class="remove-all">удалить все записи</div>
+    <div class="history">история
+      <ul>
+        li.spisok
+      </ul>
+
+
+
+    </div>
+  </section>
+
   <main class="content-wrap container">
     <!--   список баз -->
     <ul class="place-list">
+
       <!-- шарада-->
       <li class="place-list__item">
+        <!--       картинка -->
         <div class="place-list__image">
           <a href="#"><img src="img/warada.jpg" alt=""></a>
         </div>
-
+        <!--описание -->
         <div class="place-list__desc">
           <h2 class="place-list__title">База отдыха "Шарада"</h2>
           <p class="place-list__adress"><span>адрес: </span>г. Кременчуг ул. Лейтенанта Днепрова,111</p>
@@ -50,7 +66,7 @@
           <p class="place-list__features">
             Коттеджи, детская площадка, бассейн, мангал, турецкая баня, футбол(крытый зал), футбол (открытая площадь), теннис(крытый зал), теннис(открытый корт), фитнес, прогулки на катере, вейкборд, рыб ...
           </p>
-
+          <!-- рейтинг -->
           <div class="place-list__rate">
             <div class="place-list__rate--star"></div>
             <div class="place-list__rate--ratio">3.45 (оценок: 20)</div>
@@ -58,9 +74,17 @@
               создать событие
             </div>
           </div>
-
         </div>
-        <div class="place-list__favorites star"> </div>
+
+        <!--        меню блока -->
+        <div class="item-action">
+          <ul class="item-action__choise">
+            <li class="favorite" title="в избранные"></li>
+            <li class="select" title="отметить"></li>
+            <li class="remove" title="удалить"></li>
+          </ul>
+        </div>
+
       </li>
 
       <!-- маяк -->
@@ -86,7 +110,13 @@
           </div>
 
         </div>
-        <div class="place-list__favorites unstar"> </div>
+        <div class="item-action">
+          <ul class="item-action__choise">
+            <li class="favorite" title="в избранные"></li>
+            <li class="select" title="отметить"></li>
+            <li class="remove" title="удалить"></li>
+          </ul>
+        </div>
       </li>
 
       <!--   липовый рай    -->
@@ -114,7 +144,13 @@
           </div>
         </div>
 
-        <div class="place-list__favorites star"></div>
+         <div class="item-action">
+          <ul class="item-action__choise">
+            <li class="favorite" title="в избранные"></li>
+            <li class="select" title="отметить"></li>
+            <li class="remove" title="удалить"></li>
+          </ul>
+        </div>
       </li>
 
       <!-- укртатнафта -->
@@ -142,7 +178,14 @@
           </div>
 
         </div>
-        <div class="place-list__favorites star"></div>
+
+         <div class="item-action">
+          <ul class="item-action__choise">
+            <li class="favorite" title="в избранные"></li>
+            <li class="select" title="отметить"></li>
+            <li class="remove" title="удалить"></li>
+          </ul>
+        </div>
       </li>
 
       <!--      city club  -->
@@ -169,7 +212,13 @@
 
         </div>
 
-        <div class="place-list__favorites"></div>
+        <div class="item-action">
+          <ul class="item-action__choise">
+            <li class="favorite" title="в избранные"></li>
+            <li class="select" title="отметить"></li>
+            <li class="remove" title="удалить"></li>
+          </ul>
+        </div>
 
       </li>
 
@@ -197,11 +246,17 @@
 
         </div>
 
-        <div class="place-list__favorites"></div>
+         <div class="item-action">
+          <ul class="item-action__choise">
+            <li class="favorite" title="в избранные"></li>
+            <li class="select" title="отметить"></li>
+            <li class="remove" title="удалить"></li>
+          </ul>
+        </div>
       </li>
 
       <!--      Мисто -->
-       <li class="place-list__item">
+      <li class="place-list__item">
         <div class="place-list__image">
           <a href="#"><img src="img/misto.jpg" alt=""></a>
         </div>
@@ -220,14 +275,19 @@
             <div class="create-event">
               создать событие
             </div>
-          </div> 
+          </div>
         </div>
-        
-        <div class="place-list__favorites star"></div>
-        
+
+        <div class="item-action">
+          <ul class="item-action__choise">
+            <li class="favorite" title="в избранные"></li>
+            <li class="select" title="отметить"></li>
+            <li class="remove" title="удалить"></li>
+          </ul>
+        </div>
       </li>
-<!--      Чайка -->
-    <li class="place-list__item">
+      <!--      Чайка -->
+      <li class="place-list__item">
         <div class="place-list__image">
           <a href="#"><img src="img/chaika.jpg" alt=""></a>
         </div>
@@ -241,44 +301,64 @@
           </p>
 
           <div class="place-list__rate">
-           
-            <div class="place-list__rate--star">
-              
-            
-              
-              
-              
-            </div>
-           
+
+            <div class="place-list__rate--star"> </div>
+
             <div class="create-event">
               создать событие
             </div>
           </div>
 
         </div>
-        
-        <div class="place-list__favorites"></div>
-        
+
+        <div class="item-action">
+          <ul class="item-action__choise">
+            <li class="favorite" title="в избранные"></li>
+            <li class="select" title="отметить"></li>
+            <li class="remove" title="удалить"></li>
+          </ul>
+        </div>
+
       </li>
     </ul>
-<div class="rateit" id="rateit5" data-rateit-min="2">
-</div>
-<div>
-    <span id="value5"></span>
-    <span id="hover5"></span>
-</div>
- 
-  
- 
-  
+    <div class="rateit" id="rateit5" data-rateit-min="2">
+    </div>
+    <div>
+      <span id="value5"></span>
+      <span id="hover5"></span>
+    </div>
   </main>
+<section class="hidden-blocks">
+<!-- окно с историей действий-->
+  <div class="history-window">
+    <div class="count-choise">1</div>
+    <div class="count-favorite">4</div>
+    <div class="count-delete">5</div>
+  </div>
+  
+<!--  добавление новой записи-->
+<div class="modal-window">
+ 
+  <form class="createNewPost" action="" name="myForm" id="createNewPost">
+
+    <input type="file" name="imagePost" id="">
+    <input type="text" name="titlePost" id="" placeholder="название места">
+    <input type="text" name="adressPost" id="" placeholder="местонахождение">
+    <input type="text" name="contactPost" id="" placeholder="контакты">
+    <textarea name="" id="" cols="30" rows="10" placeholder="описание"></textarea>
+    <button id="send-data">добавить</button>
+    <input type="reset" name="" id="" value="очистить">
+     <div class="modal-window__close-icon">+</div>
+  </form>
+
+</div>
+</section>
 
 
 
 
 
-
-<div class="contact-us">связаться с нами</div>
+  <div class="contact-us">связаться с нами</div>
   <script src="js/main.js"></script>
 </body>
 

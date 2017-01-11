@@ -5,8 +5,21 @@
   right: 35%;
   top:125px;
   transform: rotate(0);
-  
 }
   
+}
+@media screen and (max-width:400px){
+  
+  .main-header__logo,
+.main-header__desc {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+}
+  .main-header__exit {
+
+  padding:15px  5px;
+
+}
   
 }
