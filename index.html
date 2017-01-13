@@ -16,7 +16,7 @@
 
   <header class="main-header">
 
-    <div class="main-header--top">
+    <div class="main-header__top">
       <a class="main-header__logo" href="#"><img src="img/header-logo.png" alt="logo" title="логотип"></a>
       <h2 class="main-header__desc">Просмотр мест</h2>
       <div class="main-header__exit">выход</div>
@@ -34,24 +34,50 @@
 
   </header>
 
-  <section class="actions container">
-    <div class="add-new">добавить новое место</div>
-    <div class="remove-сhecked">удалить отмеченные</div>
-    <div class="remove-all">удалить все записи</div>
-    <div class="history">история </div>
-  </section>
+  <div class="actions container">
+
+    <div class="wrap-action">
+      <div class="add-new">добавить новое место</div>
+    </div>
+
+    <div class="wrap-action">
+      <div class="remove-checked">удалить отмеченные</div>
+      <div class="remove-all">удалить все записи</div>
+    </div>
+
+    <div class="wrap-action">
+      <div class="history-added">список добавленных</div>
+      <div class="history-removed">список удаленных</div>
+    </div>
+
+    <div class="wrap-action wrap-count">
+
+      <div>в избранном<span class="count-for-history-fav"></span>
+      </div>
+
+      <div>новых мест<span class="count-for-history-new"></span>
+      </div>
+
+      <div>удалено мест <span class="count-for-history-del"></span></div>
+
+    </div>
+
+
+
+  </div>
 
   <main class="content-wrap container">
+
     <!--   список баз -->
     <ul class="place-list">
 
       <!-- шарада-->
       <li class="place-list__item">
-        <!--       картинка -->
+
         <div class="place-list__image">
           <a href="#"><img src="img/warada.jpg" alt=""></a>
         </div>
-        <!--описание -->
+
         <div class="place-list__desc">
           <h2 class="place-list__title">База отдыха "Шарада"</h2>
           <p class="place-list__adress"><span>адрес: </span>г. Кременчуг ул. Лейтенанта Днепрова,111</p>
@@ -59,23 +85,26 @@
           <p class="place-list__features">
             Коттеджи, детская площадка, бассейн, мангал, турецкая баня, футбол(крытый зал), футбол (открытая площадь), теннис(крытый зал), теннис(открытый корт), фитнес, прогулки на катере, вейкборд, рыб ...
           </p>
-          <!-- рейтинг -->
+
           <div class="place-list__rate">
-            <div class="place-list__rate--star"></div>
-            <div class="place-list__rate--ratio">3.45 (оценок: 20)</div>
+
+            <div id="stars">
+              <span id="star1" class="stars" data-rating="1" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star2" class="stars" data-rating="2" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star3" class="stars" data-rating="3" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star4" class="stars" data-rating="4" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star5" class="stars" data-rating="5" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+
+            </div>
+            <div class="place-list__rate--ratio">
+              3.45 (оценок: 20)
+            </div>
             <div class="create-event">
               создать событие
             </div>
-          </div>
-        </div>
 
-        <!--        меню блока -->
-        <div class="item-action">
-          <ul class="item-action__choise">
-            <li class="favorite" title="в избранные"></li>
-            <li class="select" title="отметить"></li>
-            <li class="remove" title="удалить"></li>
-          </ul>
+          </div>
+
         </div>
 
       </li>
@@ -95,20 +124,19 @@
           </p>
 
           <div class="place-list__rate">
-            <div class="place-list__rate--star"></div>
+            <div id="stars">
+              <span id="star1" class="stars" data-rating="1" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star2" class="stars" data-rating="2" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star3" class="stars" data-rating="3" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star4" class="stars" data-rating="4" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star5" class="stars" data-rating="5" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+            </div>
             <div class="place-list__rate--ratio">4.8 (оценок: 41)</div>
             <div class="create-event">
               создать событие
             </div>
           </div>
 
-        </div>
-        <div class="item-action">
-          <ul class="item-action__choise">
-            <li class="favorite" title="в избранные"></li>
-            <li class="select" title="отметить"></li>
-            <li class="remove" title="удалить"></li>
-          </ul>
         </div>
       </li>
 
@@ -129,7 +157,13 @@
           </p>
 
           <div class="place-list__rate">
-            <div class="place-list__rate--star"></div>
+            <div id="stars">
+              <span id="star1" class="stars" data-rating="1" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star2" class="stars" data-rating="2" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star3" class="stars" data-rating="3" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star4" class="stars" data-rating="4" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star5" class="stars" data-rating="5" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+            </div>
             <div class="place-list__rate--ratio">5.0 (оценок: 37)</div>
             <div class="create-event">
               создать событие
@@ -137,13 +171,7 @@
           </div>
         </div>
 
-         <div class="item-action">
-          <ul class="item-action__choise">
-            <li class="favorite" title="в избранные"></li>
-            <li class="select" title="отметить"></li>
-            <li class="remove" title="удалить"></li>
-          </ul>
-        </div>
+
       </li>
 
       <!-- укртатнафта -->
@@ -163,7 +191,13 @@
           </p>
 
           <div class="place-list__rate">
-            <div class="place-list__rate--star"></div>
+            <div id="stars">
+              <span id="star1" class="stars" data-rating="1" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star2" class="stars" data-rating="2" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star3" class="stars" data-rating="3" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star4" class="stars" data-rating="4" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star5" class="stars" data-rating="5" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+            </div>
             <div class="place-list__rate--ratio">2.8 (оценок: 12)</div>
             <div class="create-event">
               создать событие
@@ -172,13 +206,6 @@
 
         </div>
 
-         <div class="item-action">
-          <ul class="item-action__choise">
-            <li class="favorite" title="в избранные"></li>
-            <li class="select" title="отметить"></li>
-            <li class="remove" title="удалить"></li>
-          </ul>
-        </div>
       </li>
 
       <!--      city club  -->
@@ -196,7 +223,13 @@
           </p>
 
           <div class="place-list__rate">
-            <div class="place-list__rate--star"></div>
+            <div id="stars">
+              <span id="star1" class="stars" data-rating="1" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star2" class="stars" data-rating="2" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star3" class="stars" data-rating="3" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star4" class="stars" data-rating="4" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star5" class="stars" data-rating="5" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+            </div>
             <div class="place-list__rate--ratio">1.3 (оценок: 4)</div>
             <div class="create-event">
               создать событие
@@ -205,13 +238,6 @@
 
         </div>
 
-        <div class="item-action">
-          <ul class="item-action__choise">
-            <li class="favorite" title="в избранные"></li>
-            <li class="select" title="отметить"></li>
-            <li class="remove" title="удалить"></li>
-          </ul>
-        </div>
 
       </li>
 
@@ -230,7 +256,13 @@
           </p>
 
           <div class="place-list__rate">
-            <div class="place-list__rate--star"></div>
+            <div id="stars">
+              <span id="star1" class="stars" data-rating="1" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star2" class="stars" data-rating="2" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star3" class="stars" data-rating="3" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star4" class="stars" data-rating="4" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star5" class="stars" data-rating="5" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+            </div>
             <div class="place-list__rate--ratio">2.5 (оценок: 8)</div>
             <div class="create-event">
               создать событие
@@ -239,13 +271,7 @@
 
         </div>
 
-         <div class="item-action">
-          <ul class="item-action__choise">
-            <li class="favorite" title="в избранные"></li>
-            <li class="select" title="отметить"></li>
-            <li class="remove" title="удалить"></li>
-          </ul>
-        </div>
+
       </li>
 
       <!--      Мисто -->
@@ -263,7 +289,13 @@
           </p>
 
           <div class="place-list__rate">
-            <div class="place-list__rate--star"></div>
+            <div id="stars">
+              <span id="star1" class="stars" data-rating="1" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star2" class="stars" data-rating="2" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star3" class="stars" data-rating="3" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star4" class="stars" data-rating="4" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star5" class="stars" data-rating="5" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+            </div>
             <div class="place-list__rate--ratio">5.0 (оценок: 82)</div>
             <div class="create-event">
               создать событие
@@ -271,13 +303,7 @@
           </div>
         </div>
 
-        <div class="item-action">
-          <ul class="item-action__choise">
-            <li class="favorite" title="в избранные"></li>
-            <li class="select" title="отметить"></li>
-            <li class="remove" title="удалить"></li>
-          </ul>
-        </div>
+
       </li>
       <!--      Чайка -->
       <li class="place-list__item">
@@ -295,57 +321,72 @@
 
           <div class="place-list__rate">
 
-            <div class="place-list__rate--star"> </div>
+            <div id="stars">
+              <span id="star1" class="stars" data-rating="1" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star2" class="stars" data-rating="2" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star3" class="stars" data-rating="3" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star4" class="stars" data-rating="4" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+              <span id="star5" class="stars" data-rating="5" style="font-size:200%;color:#EAE9E6;">&bigstar;</span>
+            </div>
 
             <div class="create-event">
               создать событие
             </div>
           </div>
-
         </div>
-
-        <div class="item-action">
-          <ul class="item-action__choise">
-            <li class="favorite" title="в избранные"></li>
-            <li class="select" title="отметить"></li>
-            <li class="remove" title="удалить"></li>
-          </ul>
-        </div>
-
       </li>
+
     </ul>
-    <div class="rateit" id="rateit5" data-rateit-min="2">
-    </div>
-    <div>
-      <span id="value5"></span>
-      <span id="hover5"></span>
-    </div>
+
+
   </main>
-<section class="hidden-blocks">
-<!-- окно с историей действий-->
-  <div class="history-window">
-    <div class="count-choise">1</div>
-    <div class="count-favorite">4</div>
-    <div class="count-delete">5</div>
+
+  <!--  служебные блоки -->
+  <div class="hidden-blocks">
+
+    <!-- модальное окно с историей добаленных -->
+    <div class="modal-window__added">
+      <div class="history-wrap">
+        <p class="history-title">Список добаленных мест</p>
+        <ul class="history-list added">
+
+        </ul>
+        <div class="modal-window__close-icon">+</div>
+      </div>
+    </div>
+
+    <!-- модальное окно с историей удаленных -->
+    <div class="modal-window__removed">
+      <div class="history-wrap">
+        <p class="history-title">Список удаленных мест</p>
+        <ul class="history-list removed">
+
+        </ul>
+        <div class="modal-window__close-icon">+</div>
+      </div>
+    </div>
+
+    <!--  добавление новой записи-->
+    <div class="modal-window">
+
+      <form class="createNewPost" action="someaction" name="myForm" id="createNewPost">
+
+        <input type="file" name="imagePost">
+        <input type="text" name="titlePost" placeholder="название места">
+        <input type="text" name="adressPost" placeholder="местонахождение">
+        <input type="text" name="contactPost" placeholder="контакты">
+        <textarea cols="30" rows="10" placeholder="описание"></textarea>
+        <input type="button" id="send-data" value="добавить">
+        <input type="reset" value="очистить">
+        <div class="modal-window__close-icon">+</div>
+      </form>
+
+    </div>
+
   </div>
-  
-<!--  добавление новой записи-->
-<div class="modal-window">
- 
-  <form class="createNewPost" action="someaction" name="myForm" id="createNewPost">
 
-    <input type="file" name="imagePost" >
-    <input type="text" name="titlePost"   placeholder="название места">
-    <input type="text" name="adressPost"  placeholder="местонахождение">
-    <input type="text" name="contactPost"  placeholder="контакты">
-    <textarea   cols="30" rows="10" placeholder="описание"></textarea>
-    <button id="send-data">добавить</button>
-    <input type="reset"   value="очистить">
-     <div class="modal-window__close-icon">+</div>
-  </form>
 
-</div>
-</section>
+  <!-- новая запись-->
 
 
 
